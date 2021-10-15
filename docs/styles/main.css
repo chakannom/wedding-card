@@ -6464,12 +6464,6 @@ button.bg-danger:focus {
     background-color: #bd2130 !important;
 }
 
-.bg-gift {
-    background: url("../images/gift/gift-background.png") no-repeat;
-    width: 100%;
-    background-size: cover;
-}
-
 .bg-light {
     background-color: #f8f9fa !important;
 }
