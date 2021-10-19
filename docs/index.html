@@ -138,8 +138,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="gallerySliderModal" tabindex="-1" aria-labelledby="gallerySliderModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered gallery-slider-backdrop">
+                <div class="modal fade gallery-slider-backdrop" style="background-color: #000;"
+                     id="gallerySliderModal" tabindex="-1" aria-labelledby="gallerySliderModalLabel" aria-hidden="true">
+                    <div style="position: absolute; left: 0; top: 0; height: 44px; width: 100%;">
+                        <button type="button" class="btn btn-secondary float-end" data-bs-dismiss="modal">닫기</button>
+                    </div>
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content">
                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                                 <div class="carousel-inner">
@@ -171,9 +175,6 @@
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
-
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-
                         </div>
                     </div>
                 </div>
