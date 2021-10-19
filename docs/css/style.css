@@ -1,3 +1,7 @@
+:root {
+    --bs-font-sans-serif: "Noto Sans KR", sans-serif;
+}
+
 .intro {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/photo/intro-background.jpg") no-repeat center center;
     background-size: cover;
