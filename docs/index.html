@@ -123,67 +123,72 @@
             <div class="container">
                 <h1 class="h1 text-center pb-3">우리의 사진들</h1>
                 <!-- gallery
-                <div class="p-2 text-center w-100">
-                    <div class="row">
-                        <div class="col-lg-4 col-6 mb-4 mb-lg-0 px-1">
-                            <a data-bs-toggle="modal" data-bs-target="#gallerySliderModal" data-bs-position="1">
-                                <img src="images/photo/gallery_1.svg" class="w-100 shadow-1-strong rounded mb-2" alt="">
-                            </a>
-                            <img src="images/photo/gallery_1.svg" class="w-100 shadow-1-strong rounded mb-2" alt="">
-                        </div>
-
-                        <div class="col-lg-4 col-6 mb-4 mb-lg-0 px-1">
-                            <img src="images/photo/gallery_2.svg" class="w-100 shadow-1-strong rounded mb-2" alt="">
-                            <img src="images/photo/gallery_2.svg" class="w-100 shadow-1-strong rounded mb-2" alt="">
-                        </div>
-
-                        <div class="col-lg-4 col-6 mb-4 mb-lg-0 px-1">
-                            <img src="images/photo/gallery_3.svg" class="w-100 shadow-1-strong rounded mb-2" alt="">
-                            <img src="images/photo/gallery_3.svg" class="w-100 shadow-1-strong rounded mb-2" alt="">
-                        </div>
-                    </div>
+                <div class="p-2 text-center w-100 gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="images/photo/gallery_1.svg" itemprop="contentUrl" data-size="600x600">
+                            <img src="images/photo/gallery_1.svg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption  1</figcaption>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="images/photo/gallery_2.svg" itemprop="contentUrl" data-size="600x600">
+                            <img src="images/photo/gallery_2.svg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 2</figcaption>
+                    </figure>
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="images/photo/gallery_3.svg" itemprop="contentUrl" data-size="600x600">
+                            <img src="images/photo/gallery_3.svg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption itemprop="caption description">Image caption 3</figcaption>
+                    </figure>
                 </div>
-                <div class="modal fade gallery-slider-backdrop" style="background-color: #000;"
-                     id="gallerySliderModal" tabindex="-1" aria-labelledby="gallerySliderModalLabel" aria-hidden="true">
-                    <div style="position: absolute; left: 0; top: 0; height: 44px; width: 100%;">
-                        <button type="button" class="btn btn-secondary float-end" data-bs-dismiss="modal">닫기</button>
-                    </div>
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="images/photo/gallery_1.svg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/photo/gallery_2.svg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Second slide label</h5>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="images/photo/gallery_3.svg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Thrid slide label</h5>
+                -->
+                <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                    <!-- Background of PhotoSwipe.
+                    It's a separate element as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
+                        <!-- Container that holds slides.
+                            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                            Don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
+                            <div class="pswp__top-bar">
+                                <!--  Controls are self-explanatory. Order can be changed. -->
+                                <div class="pswp__counter"></div>
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                            </div>
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                -->
             </div>
         </div>
         <div class="section bg-light" id="location">
@@ -347,6 +352,8 @@
         </a>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/photoswipe.min.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
     <script src="js/wedding.js"></script>
 </body>
 </html>

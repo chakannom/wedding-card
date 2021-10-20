@@ -78,12 +78,23 @@
     letter-spacing: 1.2px;
 }
 
-@media screen and (max-width: 576px) {
-    .modal.gallery-slider-backdrop > .modal-dialog {
-        margin: 0;
-    }
+.gallery {
+  width: 100%;
+  float: left;
 }
-
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+}
+.gallery figcaption {
+  display: none;
+}
 
 .map-icon {
     width: 48px;
