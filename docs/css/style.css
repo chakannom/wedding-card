@@ -9,6 +9,7 @@
     height: 100vh;
     min-height: 480px;
 }
+
 .intro::before {
     content: "";
     background-color: rgba(245, 138, 119, 0.2);
@@ -99,20 +100,6 @@
     display: block;
 }
 
-@media screen and (min-width: 576px) {
-    .gallery figure {
-        float: left;
-        width: 33.33%;
-        box-sizing: border-box;
-        padding: 7px;
-        margin: 0;
-    }
-
-    .gallery figure.special-figure {
-        display: none;
-    }
-}
-
 .map-icon {
     width: 48px;
     height: auto;
@@ -126,4 +113,27 @@
     bottom: 0;
     right: 0;
     margin: 0px 15px 15px 15px;
+}
+
+@media screen and (min-width: 576px) {
+    .intro {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/photo/intro-background.jpg") no-repeat center center;
+        background-size: cover;
+        background-position: 50% 20%;
+        height: 100vh;
+        min-height: 480px;
+    }
+
+    .gallery figure {
+        float: left;
+        width: 33.33%;
+        box-sizing: border-box;
+        padding: 7px;
+        margin: 0;
+    }
+
+    .gallery figure.special-figure {
+        display: none;
+    }
+
 }
