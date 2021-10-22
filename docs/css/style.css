@@ -47,7 +47,6 @@
     display: inline-block;
     font-weight: 100;
     text-align: center;
-    font-size: 30px;
     text-shadow: none;
 }
 
@@ -87,13 +86,31 @@
   height: auto;
 }
 .gallery figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  width: 150px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 7px;
+    margin: 0;
 }
-.gallery figcaption {
-  display: none;
+
+.gallery figure a {
+    background-size: cover !important;
+    cursor: default;
+    display: block;
+}
+
+@media screen and (min-width: 576px) {
+    .gallery figure {
+        float: left;
+        width: 33.33%;
+        box-sizing: border-box;
+        padding: 7px;
+        margin: 0;
+    }
+
+    .gallery figure.special-figure {
+        display: none;
+    }
 }
 
 .map-icon {
