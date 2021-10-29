@@ -1,10 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>wedding-card</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wedding of [name] and [name]</title>
+    <meta name="description" content="Congratulations on [name] and [name]'s marriage"/>
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="images/favicon/wedding-couple-128x128.png" sizes="128x128">
+    <link rel="icon" href="images/favicon/wedding-couple-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon/wedding-couple-16x16.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/photoswipe/default-skin.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-wedding-card
+    <div class="content">
+        <div class="intro" id="intro">
+            <div class="wedding-announcement d-flex align-items-center justify-content-start">
+                <div class="container">
+                    <div class="fs-2">[name] <img src="images/img/heart-128x128.png" style="filter: invert(1)"> [name]</div>
+                    <div class="mt-1 mb-3 fs-6">| WE ARE GETTING MARRIED |</div>
+                    <div class="fs-5">Saturday, February 12, 2022 at 12PM</div>
+                    <div class="mb-3 fs-5">[wedding hall name]</div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#intro">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#greetings">Greetings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#couple">Couple</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Our pictures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#location">Location</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="section" id="greetings">
+            <div class="container">
+                <h1 class="h1 text-center pb-3">Greetings</h1>
+                <div class="row text-center">
+                    <div class="col-md-12 text-center mb-5 fs-5">
+                        We want to nurture the love<br/>
+                        we have built up facing each other<br/>
+                        into a great love<br/>
+                        that we can walk together<br/>
+                        while looking at the same place.<br/>
+                        <br/>
+                        We would be grateful<br/>
+                        if you could bless the future<br/>
+                        so that the two of us can protect them<br/>
+                        in the name of love.
+                    </div>
+                    <div class="col-md-12 text-center mb-3 fs-4">
+                        <p>[name] · [name]<span class="small">'s&nbsp;&nbsp;son&nbsp;&nbsp;</span>&nbsp;[name]</p>
+                        <p>[name] · [name]<span class="small">'s&nbsp;&nbsp;daughter&nbsp;</span>&nbsp;[name]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section  bg-light" id="couple">
+            <div class="container">
+                <h1 class="h1 text-center pb-3">Couple</h1>
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <div class="mt-3">
+                            <h2 class="h2">[name]</h2>
+                            <img class="w-100 rounded-circle" style="background: url(images/photo/groom.jpg) no-repeat center center" src="images/img/blank.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mt-3">
+                            <h2 class="h2">[name]</h2>
+                            <img class="w-100 rounded-circle" style="background: url(images/photo/bride.jpg) no-repeat center center" src="images/img/blank.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-window parallax bg-light">
+            <div class="container">
+                <h2 class="text-center">D-Day</h2>
+                <div class="row text-center">
+                    <!--Time counter start-->
+                    <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 mb-3">
+                        <div id="clockdiv">
+                            <div>
+                                <span class="days" id="clock-days">249</span>
+                                <div class="smalltext">Days</div>
+                            </div>
+                            <div>
+                                <span class="hours" id="clock-hours">23</span>
+                                <div class="smalltext">Hours</div>
+                            </div>
+                            <div>
+                                <span class="minutes" id="clock-minutes">34</span>
+                                <div class="smalltext">Minutes</div>
+                            </div>
+                            <div>
+                                <span class="seconds" id="clock-seconds">16</span>
+                                <div class="smalltext">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="gallery">
+            <div class="container">
+                <h1 class="h1 text-center pb-3">Our pictures</h1>
+                <div class="row text-center">
+                    <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_1.jpg" style="background: url(images/photo/gallery_1.jpg) no-repeat center center" itemprop="contentUrl" data-size="567x756">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_1.jpg" style="background: url(images/photo/gallery_1.jpg) no-repeat center center" itemprop="contentUrl" data-size="567x756">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_1.jpg" style="background: url(images/photo/gallery_1.jpg) no-repeat center center" itemprop="contentUrl" data-size="567x756">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="special-figure">
+                            <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
+                                <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                        </figure>
+                    </div>
+                </div>
+                <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                    <!-- Background of PhotoSwipe.
+                    It's a separate element as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
+                        <!-- Container that holds slides.
+                            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                            Don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
+                            <div class="pswp__top-bar">
+                                <!--  Controls are self-explanatory. Order can be changed. -->
+                                <div class="pswp__counter"></div>
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-light" id="location">
+            <div class="container">
+                <h1 class="h1 text-center pb-3">Location</h1>
+                <div class="text-center mb-3">
+                    <h4>[wedding hall name]</h4>
+                    <div>[wedding hall address]</div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="col text-center mb-3">
+                        <a class="text-decoration-none" href="http://naver.me/G7KLYbjn">
+                            <img class="map-icon" src="images/img/naver-map.png">
+                        </a>
+                        <a class="text-decoration-none" href="http://kko.to/KeedotS4o">
+                            <img class="map-icon" src="images/img/kakao-map.png">
+                        </a>
+                        <a class="text-decoration-none" href="https://goo.gl/maps/Z6M2DQWNXX5gVpYg7">
+                            <img class="map-icon" src="images/img/google-map.png">
+                        </a>
+                    </div>
+                    <div class="col text-center mb-3">
+                        <label>
+                            Shuttle Bus<br/>
+                            <span style="color: rgb(255, 255, 255); background-color: rgb(155, 152, 147);">&nbsp; Suwon Station &nbsp;</span>
+                            Entrance on the 1st floor of the transit center<br/>
+                            (20 minutes, 40 minutes, 60 minutes 3 times every hour based on the first hour)<br/>
+                        </label>
+                    </div>
+                    <div class="col text-center mb-3">
+                        <div id="map" style="width:100%;height:400px;"></div>
+                        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c742ac4c8b4f5690a79ac5c8c33ee879"></script>
+                        <script>
+                            var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                                mapOption = {
+                                    center: new kakao.maps.LatLng(37.256621286377936, 126.96896686925244), // 지도의 중심좌표
+                                    level: 3 // 지도의 확대 레벨
+                                };
+
+                            var map = new kakao.maps.Map(mapContainer, mapOption);
+                            var markerPosition  = new kakao.maps.LatLng(37.256621286377936, 126.96896686925244);
+
+                            // 마커를 생성합니다
+                            var marker = new kakao.maps.Marker({
+                                position: markerPosition
+                            });
+
+                            // 마커가 지도 위에 표시되도록 설정합니다
+                            marker.setMap(map);
+                        </script>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    By subway (shuttle bus)
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <span style="color: rgb(255, 255, 255); background-color: rgb(155, 152, 147);">&nbsp; Suwon Station &nbsp;</span>
+                                    Entrance on the 1st floor of the transit center<br/>
+                                    (20 minutes, 40 minutes, 60 minutes 3 times every hour based on the first hour)<br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    By public transportation
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        <span class="fs-6">
+                                            <strong>
+                                                <span style="background-color: rgb(155, 152, 147); color: rgb(255, 255, 255);">&nbsp; Suwon Station [ Exit 7 ] &nbsp;</span>
+                                            </strong><br/>
+                                            88, 88-1, 720-2, 51 Get off at Gwonseon-gu Office
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span class="fs-6">
+                                            <strong>
+                                                <span style="color: rgb(255, 255, 255); background-color: rgb(155, 152, 147);">&nbsp; Suwon Station 2nd Floor Transfer Center &nbsp;</span>
+                                            </strong><br/>
+                                            [ Platform 2 ] No. 51
+                                        </span><br/>
+                                        <span class="fs-6">[ Platform 11 ] Village Bus 6-1</span><br/>
+                                        <span class="fs-6">[ Platform 10 ] 11-1 Get off at Gwonseon-gu Office</span>
+                                    </p>
+                                    <p>
+                                        <span class="fs-6">
+                                            <strong>
+                                                <span style="background-color: rgb(155, 152, 147); color: rgb(255, 255, 255);">&nbsp; Wide Area Bus &nbsp;</span>
+                                            </strong><br/>
+                                            [Jamsil Transit Center Platform No. 10] 1009 Get off at Gwonseon-gu Office, Seobu Police Station
+                                        </span><br/>
+                                        <span class="fs-6">[ Gangnam Exits 5 and 6 ] 3003</span><br/>
+                                        <span class="fs-6">[ Sadang Exit 4 ] 7780 Gwonseon-gu Office, get off at Gyeonggi Labor Welfare Center</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="gift">
+            <div class="container">
+                <h4 class="h4 text-center pb-3">Congratulations</h4>
+                <div class="row text-center">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-lg border-0 mx-2" style="background-color:#d59d84c4;" data-bs-toggle="modal" data-bs-target="#brideGiftModal">
+                            groom
+                        </button>
+                        <div class="modal fade" id="brideGiftModal" tabindex="-1" aria-labelledby="brideGiftModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                    </div>
+                                    <div class="modal-footer d-block">
+                                        <div class="d-grid">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg border-0 mx-2" style="background-color:#d59d84c4;" data-bs-toggle="modal" data-bs-target="#groomGiftModal">
+                            bride
+                        </button>
+                        <div class="modal fade" id="groomGiftModal" tabindex="-1" aria-labelledby="groomGiftModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                    </div>
+                                    <div class="modal-footer d-block">
+                                        <div class="d-grid">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="pt-5 text-muted text-center text-small section bg-light">
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Copyright © 2022-02-12 [name] ♡ [name]</div>
+    </footer>
+    <div class="back-to-top">
+        <a href="#intro">
+            <img src="images/img/up-arrow-128x128.png" style="width:32px;height:32px;">
+        </a>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/photoswipe.min.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src="js/wedding.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics: change G-XXXXXXXXXX to be your site's ID. -->
+<!--    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ7ZL3VQ67"></script>-->
+<!--    <script>-->
+<!--        window.dataLayer = window.dataLayer || [];-->
+<!--        function gtag(){dataLayer.push(arguments);}-->
+<!--        gtag('js', new Date());-->
+<!--        gtag('config', 'G-RQ7ZL3VQ67');-->
+<!--    </script>-->
 </body>
 </html>
