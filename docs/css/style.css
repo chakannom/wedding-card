@@ -1,5 +1,12 @@
 :root {
-    --bs-font-sans-serif: "Noto Sans KR", sans-serif;
+    --bs-font-sans-serif: "SeoulNamsanM", "Noto Sans KR", sans-serif;
+}
+
+@font-face {
+    font-family: 'SeoulNamsanM';
+    src: url('../fonts/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .intro {
