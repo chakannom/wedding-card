@@ -48,6 +48,10 @@
     padding: 70px 0;
 }
 
+#greetings-content {
+    font-size: 1.1rem !important;
+}
+
 #clockdiv {
     margin-top: 20px;
     font-family: 'Abel', sans-serif;
