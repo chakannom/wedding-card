@@ -100,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="parallax-window parallax bg-light">
+        <div class="bg-light">
             <div class="container">
                 <h2 class="text-center">D-Day</h2>
                 <div class="row text-center">
@@ -392,6 +392,49 @@
                 </div>
             </div>
         </div>
+        <div id="share">
+            <div class="container">
+                <h2 class="text-center">공유하기</h2>
+                <div class="row text-center">
+                    <!--Time counter start-->
+                    <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 mb-3">
+                        <a id="kakao-link-btn" href="javascript:sendKakaoLink()">
+                            <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" style="width:48px;height:48px;"/>
+                        </a>
+                        <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+                        <script type="text/javascript">
+                            // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+                            Kakao.init('c742ac4c8b4f5690a79ac5c8c33ee879');
+                            function sendKakaoLink() {
+                                Kakao.Link.sendDefault({
+                                    objectType: 'location',
+                                    address: '경기도 수원시 권선구 호매실로 46-16',
+                                    addressTitle: '더시그니처클래스',
+                                    content: {
+                                        title: '유선과 조원미의 결혼식',
+                                        description: 'WE ARE GETTING MARRIED',
+                                        imageUrl: 'images/photo/share_thumb_01.jpg',
+                                        link: {
+                                              mobileWebUrl: 'https://wedding.dcof.io',
+                                              webUrl: 'https://wedding.dcof.io',
+                                        },
+                                    },
+                                    buttons: [
+                                        {
+                                            title: '자세히 보기',
+                                            link: {
+                                                mobileWebUrl: 'https://wedding.dcof.io',
+                                                webUrl: 'https://wedding.dcof.io',
+                                            },
+                                        },
+                                    ],
+                                })
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="pt-5 text-muted text-center text-small section bg-light">
         <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -416,48 +459,5 @@
         gtag('config', 'G-RQ7ZL3VQ67');
     </script>
     -->
-    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-    <a id="kakao-link-btn" href="javascript:sendLink()">
-        <img
-                src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-        />
-    </a>
-    <script type="text/javascript">
-    // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
-        Kakao.init('c742ac4c8b4f5690a79ac5c8c33ee879');
-
-  function sendLink() {
-    Kakao.Link.sendDefault({
-      objectType: 'location',
-      address: '경기도 수원시 권선구 호매실로 46-16',
-      addressTitle: '더시그니처클래스',
-      content: {
-        title: '유선과 조원미의 결혼식',
-        description: 'WE ARE GETTING MARRIED',
-        imageUrl:
-          'http://k.kakaocdn.net/dn/bSbH9w/btqgegaEDfW/vD9KKV0hEintg6bZT4v4WK/kakaolink40_original.png',
-        link: {
-          mobileWebUrl: 'https://wedding.dcof.io',
-          webUrl: 'https://wedding.dcof.io',
-        },
-      },
-      social: {
-        likeCount: 286,
-        commentCount: 45,
-        sharedCount: 845,
-      },
-      buttons: [
-        {
-          title: '자세히 보기',
-          link: {
-            mobileWebUrl: 'https://wedding.dcof.io',
-            webUrl: 'https://wedding.dcof.io',
-          },
-        },
-      ],
-    })
-  }
-</script>
-
 </body>
 </html>
