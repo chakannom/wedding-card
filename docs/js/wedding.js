@@ -203,13 +203,20 @@ var initGallerySliderFromDOM = function(gallerySelector) {
 initGallerySliderFromDOM('.gallery');
 
 /* copy to clipboard */
-//function copy(val) {
-//    const textareaTag = document.createElement("textarea");
-//    document.body.appendChild(textareaTag);
-//    textareaTag.value = 'Hello World';
-//    textareaTag.select();
-//    document.execCommand('copy');
-//    document.body.removeChild(textareaTag);
-//
-//    console.log('Copied!');
-//}
+var copy = function(val) {
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(val).then(() => {
+            console.log("Text copied to clipboard...")
+        }).catch(err => {
+            console.log('Something went wrong', err);
+        })
+    } else if (document.execCommand) {
+        const textareaTag = document.createElement("textarea");
+        document.body.appendChild(textareaTag);
+        textareaTag.value = val;
+        textareaTag.select();
+        document.execCommand('copy');
+        document.body.removeChild(textareaTag);
+        console.log('Copied!');
+    }
+}
