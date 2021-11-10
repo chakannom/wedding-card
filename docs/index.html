@@ -486,7 +486,7 @@
                             <script>
                                 function sendNaverLineLink() {
                                     const shareInfo = '유선과 조원미의 결혼식\n2022년 2월 12일 토 낮 12시\nhttps://wedding.dcof.io';
-                                    const url = 'https://social-plugins.line.me/lineit/share?url=' + encodeURIComponent(shareInfo);
+                                    const url = 'http://line.me/R/msg/text/?' + encodeURIComponent(shareInfo);
                                     const aTag = window.open(url, 'Line', '');
                                     if ( aTag ) aTag.focus();
                                 }
