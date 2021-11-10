@@ -201,3 +201,15 @@ var initGallerySliderFromDOM = function(gallerySelector) {
 };
 // execute above function
 initGallerySliderFromDOM('.gallery');
+
+/* copy to clipboard */
+//function copy(val) {
+//    const textareaTag = document.createElement("textarea");
+//    document.body.appendChild(textareaTag);
+//    textareaTag.value = 'Hello World';
+//    textareaTag.select();
+//    document.execCommand('copy');
+//    document.body.removeChild(textareaTag);
+//
+//    console.log('Copied!');
+//}

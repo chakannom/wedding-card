@@ -359,7 +359,7 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="gift">
+        <div class="section pb-5" id="gift">
             <div class="container">
                 <h4 class="h4 text-center pb-3">신랑 신부에게 마음 전하기</h4>
                 <div class="row text-center">
@@ -371,6 +371,22 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>신랑</h5>
+                                                    <a class="btn btn-primary btn-sm">복사하기</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1">신한은행 000-00-00000 (예금주 : 유선)</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>신랑측 아버지</h5>
+                                                    <a class="btn btn-primary btn-sm">복사하기</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1 bank">농협 000-0000-0000-00 (예금주 : 유종택)</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="modal-footer d-block">
                                         <div class="d-grid">
@@ -387,6 +403,29 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>신부</h5>
+                                                    <a class="btn btn-primary btn-sm">복사하기</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1">XX은행 000-00-00000 (예금주 : 조원미)</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>신부측 아버지</h5>
+                                                    <a class="btn btn-primary btn-sm">복사하기</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1 bank">XX은행 000-00-00000 (예금주 : 조병범)</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>신부측 어머니</h5>
+                                                    <a class="btn btn-primary btn-sm">복사하기</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1 bank">XX은행 000-00-00000 (예금주 : 김효숙)</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="modal-footer d-block">
                                         <div class="d-grid">
@@ -402,43 +441,57 @@
         </div>
         <div id="share">
             <div class="container">
-                <h2 class="text-center">공유하기</h2>
+                <h2 class="h4 text-center pb-3">공유하기</h2>
                 <div class="row text-center">
-                    <!--Time counter start-->
                     <div class="col text-center mb-3">
-                        <a id="kakao-link-btn" href="javascript:sendKakaoLink()">
-                            <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" style="width:48px;height:48px;"/>
-                        </a>
-                        <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-                        <script type="text/javascript">
-                            // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
-                            Kakao.init('c742ac4c8b4f5690a79ac5c8c33ee879');
-                            function sendKakaoLink() {
-                                Kakao.Link.sendDefault({
-                                    objectType: 'location',
-                                    address: '경기도 수원시 권선구 호매실로 46-16',
-                                    addressTitle: '더시그니처클래스',
-                                    content: {
-                                        title: '유선과 조원미의 결혼식',
-                                        description: '2022년 2월 12일 토 낮 12시',
-                                        imageUrl: 'https://wedding.dcof.io/images/photo/share_thumb_01.jpg',
-                                        link: {
+                        <div class="d-inline-block">
+                            <a id="kakao-talk-link-btn" href="javascript:sendKakaoTalkLink()">
+                                <img class="share-icon" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png">
+                            </a>
+                            <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+                            <script type="text/javascript">
+                                Kakao.init('c742ac4c8b4f5690a79ac5c8c33ee879');
+                                function sendKakaoTalkLink() {
+                                    Kakao.Link.sendDefault({
+                                        objectType: 'location',
+                                        address: '경기도 수원시 권선구 호매실로 46-16',
+                                        addressTitle: '더시그니처클래스',
+                                        content: {
+                                            title: '유선과 조원미의 결혼식',
+                                            description: 'WE ARE GETTING MARRIED',
+                                            imageUrl: 'https://wedding.dcof.io/images/photo/share_thumb_01.jpg',
+                                            link: {
                                               mobileWebUrl: 'https://wedding.dcof.io',
                                               webUrl: 'https://wedding.dcof.io',
-                                        },
-                                    },
-                                    buttons: [
-                                        {
-                                            title: '자세히 보기',
-                                            link: {
-                                                mobileWebUrl: 'https://wedding.dcof.io',
-                                                webUrl: 'https://wedding.dcof.io',
                                             },
                                         },
-                                    ],
-                                })
-                            }
-                        </script>
+                                        buttons: [
+                                            {
+                                                title: '자세히 보기',
+                                                link: {
+                                                    mobileWebUrl: 'https://wedding.dcof.io',
+                                                    webUrl: 'https://wedding.dcof.io',
+                                                },
+                                            },
+                                        ],
+                                    })
+                                }
+                            </script>
+                        </div>
+                        <div class="d-inline-block">
+                            <a id="naver-line-link-btn" href="javascript:sendNaverLineLink();">
+                                <img class="share-icon" src="https://www.line-website.com/social-plugins/img/common/square-default-large.png">
+                            </a>
+                            <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+                            <script>
+                                function sendNaverLineLink() {
+                                    const shareInfo = '유선과 조원미의 결혼식\n2022년 2월 12일 토 낮 12시\nhttps://wedding.dcof.io';
+                                    const url = 'https://social-plugins.line.me/lineit/share?url=' + encodeURIComponent(shareInfo);
+                                    const aTag = window.open(url, 'Line', '');
+                                    if ( aTag ) aTag.focus();
+                                }
+                            </script>
+                        </div>
                     </div>
                 </div>
             </div>
