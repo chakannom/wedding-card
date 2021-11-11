@@ -206,7 +206,7 @@ initGallerySliderFromDOM('.gallery');
 var copy = function(val) {
     if (navigator.clipboard) {
         navigator.clipboard.writeText(val).then(() => {
-            console.log("Text copied to clipboard...")
+            new bootstrap.Toast(document.getElementById('copiedToast')).show()
         }).catch(err => {
             console.log('Something went wrong', err);
         })
@@ -217,6 +217,6 @@ var copy = function(val) {
         textareaTag.select();
         document.execCommand('copy');
         document.body.removeChild(textareaTag);
-        console.log('Copied!');
+        new bootstrap.Toast(document.getElementById('copiedToast')).show()
     }
 }
