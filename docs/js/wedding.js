@@ -220,3 +220,7 @@ var copy = function(val) {
         new bootstrap.Toast(document.getElementById('copiedToast')).show()
     }
 }
+
+/* share schedule */
+var shareSchedule = function() {
+}
