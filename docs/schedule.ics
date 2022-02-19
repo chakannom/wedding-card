@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ICalendarCreator//NONSGML//EN
+BEGIN:VEVENT
+DTSTART:20220212T120000
+DTEND:20220212T130000
+SUMMARY:Wedding of [name] and [name]
+LOCATION:[wedding hall address]
+DESCRIPTION:Congratulations on [name] and [name]'s marriage
+END:VEVENT
+END:VCALENDAR

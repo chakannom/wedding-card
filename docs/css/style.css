@@ -1,5 +1,19 @@
 :root {
-    --bs-font-sans-serif: "Noto Sans KR", sans-serif;
+    --bs-font-sans-serif: "SeoulNamsanM", "Noto Sans KR", sans-serif;
+}
+
+@font-face {
+    font-family: 'SeoulNamsanM';
+    src: url('../fonts/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.intro-special {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    min-height: 480px;
 }
 
 .intro {
@@ -39,6 +53,10 @@
 
 .section {
     padding: 70px 0;
+}
+
+#greetings-content {
+    font-size: 1.1rem !important;
 }
 
 #clockdiv {
@@ -82,10 +100,12 @@
   width: 100%;
   float: left;
 }
+
 .gallery img {
   width: 100%;
   height: auto;
 }
+
 .gallery figure {
     float: left;
     width: 50%;
@@ -101,6 +121,18 @@
 }
 
 .map-icon {
+    width: 48px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#gift .bank {
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.share-icon {
     width: 48px;
     height: auto;
     margin-left: 5px;

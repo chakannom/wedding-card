@@ -8,6 +8,11 @@
     <meta name="google" content="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wedding.dcof.io" />
+    <meta property="og:title" content="Wedding of [name] and [name]" />
+    <meta property="og:description" content="Saturday, February 12, 2022 at 12PM" />
+    <meta property="og:image" content="https://wedding.dcof.io/images/photo/share_thumb_01.jpg" />
     <link rel="apple-touch-icon" href="images/favicon/wedding-couple-128x128.png" sizes="128x128">
     <link rel="icon" href="images/favicon/wedding-couple-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="images/favicon/wedding-couple-16x16.png" sizes="16x16" type="image/png">
@@ -18,6 +23,7 @@
 </head>
 <body>
     <div class="content">
+        <canvas class="intro-special"></canvas>
         <div class="intro" id="intro">
             <div class="wedding-announcement d-flex align-items-center justify-content-start">
                 <div class="container">
@@ -51,6 +57,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#location">Location</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#share">Share</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -60,7 +69,7 @@
             <div class="container">
                 <h1 class="h1 text-center pb-3">Greetings</h1>
                 <div class="row text-center">
-                    <div class="col-md-12 text-center mb-5 fs-5">
+                    <div class="col-md-12 text-center mb-5" id="greetings-content">
                         We want to nurture the love<br/>
                         we have built up facing each other<br/>
                         into a great love<br/>
@@ -86,19 +95,19 @@
                     <div class="col-md-6">
                         <div class="mt-3">
                             <h2 class="h2">[name]</h2>
-                            <img class="w-100 rounded-circle" style="background: url(images/photo/groom.jpg) no-repeat center center" src="images/img/blank.png">
+                            <img class="w-100 rounded-circle" style="background: url(images/photo/bride.jpg) no-repeat center center" src="images/img/blank.png">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mt-3">
                             <h2 class="h2">[name]</h2>
-                            <img class="w-100 rounded-circle" style="background: url(images/photo/bride.jpg) no-repeat center center" src="images/img/blank.png">
+                            <img class="w-100 rounded-circle" style="background: url(images/photo/groom.jpg) no-repeat center center" src="images/img/blank.png">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="parallax-window parallax bg-light">
+        <div class="bg-light">
             <div class="container">
                 <h2 class="text-center">D-Day</h2>
                 <div class="row text-center">
@@ -135,61 +144,61 @@
                             <a href="images/photo/gallery_1.jpg" style="background: url(images/photo/gallery_1.jpg) no-repeat center center" itemprop="contentUrl" data-size="567x756">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 1</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                             <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 2</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                             <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 3</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                             <a href="images/photo/gallery_1.jpg" style="background: url(images/photo/gallery_1.jpg) no-repeat center center" itemprop="contentUrl" data-size="567x756">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 4</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                             <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 5</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                             <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 6</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                             <a href="images/photo/gallery_1.jpg" style="background: url(images/photo/gallery_1.jpg) no-repeat center center" itemprop="contentUrl" data-size="567x756">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 7</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                             <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 8</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                             <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 9</figcaption> -->
                         </figure>
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="special-figure">
                             <a href="images/photo/gallery_2.jpg" style="background: url(images/photo/gallery_2.jpg) no-repeat left center" itemprop="contentUrl" data-size="960x640">
                                 <img src="images/img/blank.png" itemprop="thumbnail" alt="Image description" />
                             </a>
-                            <!-- <figcaption itemprop="caption description">Image caption  1</figcaption> -->
+                            <!-- <figcaption itemprop="caption description">Image caption 10</figcaption> -->
                         </figure>
                     </div>
                 </div>
@@ -354,13 +363,29 @@
                 <h4 class="h4 text-center pb-3">Congratulations</h4>
                 <div class="row text-center">
                     <div class="col">
-                        <button type="button" class="btn btn-primary btn-lg border-0 mx-2" style="background-color:#d59d84c4;" data-bs-toggle="modal" data-bs-target="#brideGiftModal">
-                            groom
+                        <button type="button" class="btn btn-primary btn-lg border-0 mx-2" style="background-color:#d59d84c4;" data-bs-toggle="modal" data-bs-target="#groomGiftModal">
+                            groom's account number
                         </button>
-                        <div class="modal fade" id="brideGiftModal" tabindex="-1" aria-labelledby="brideGiftModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="groomGiftModal" tabindex="-1" aria-labelledby="groomGiftModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>groom</h5>
+                                                    <a href="javascript:void(0);" onclick="copy('000000000000000', this);" class="btn btn-primary btn-sm">Copy</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1 bank">OOBank (name : OOO)<br>00000-00000-00000</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>groom's parent</h5>
+                                                    <a href="javascript:void(0);" onclick="copy('000000000000000', this);" class="btn btn-primary btn-sm">Copy</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1 bank">OOBank (name : OOO)<br/>00000-00000-00000</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="modal-footer d-block">
                                         <div class="d-grid">
@@ -370,13 +395,29 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg border-0 mx-2" style="background-color:#d59d84c4;" data-bs-toggle="modal" data-bs-target="#groomGiftModal">
-                            bride
+                        <button type="button" class="btn btn-primary btn-lg border-0 mx-2" style="background-color:#d59d84c4;" data-bs-toggle="modal" data-bs-target="#brideGiftModal">
+                            bride's account number
                         </button>
-                        <div class="modal fade" id="groomGiftModal" tabindex="-1" aria-labelledby="groomGiftModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="brideGiftModal" tabindex="-1" aria-labelledby="brideGiftModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>bride</h5>
+                                                    <a href="javascript:void(0);" onclick="copy('000000000000000', this);" class="btn btn-primary btn-sm">Copy</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1 bank">OOBank (name : OOO)<br/>00000-00000-00000</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="d-flex w-100 justify-content-between mb-1">
+                                                    <h5>bride's parent</h5>
+                                                    <a href="javascript:void(0);" onclick="copy('000000000000000', this);" class="btn btn-primary btn-sm">Copy</a>
+                                                </div>
+                                                <p class="d-flex w-100 mb-1 bank">OOBank (name : OOO)<br/>00000-00000-00000</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="modal-footer d-block">
                                         <div class="d-grid">
@@ -385,6 +426,73 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="share">
+            <div class="container">
+                <h2 class="h4 text-center pb-3">Share</h2>
+                <div class="row text-center">
+                    <div class="col text-center mb-3">
+                        <div class="d-inline-block">
+                            <a id="kakao-talk-link-btn" href="javascript:sendKakaoTalkLink()">
+                                <img class="share-icon" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png">
+                            </a>
+                            <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+                            <script type="text/javascript">
+                                Kakao.init('c742ac4c8b4f5690a79ac5c8c33ee879');
+                                function sendKakaoTalkLink() {
+                                    Kakao.Link.sendDefault({
+                                        objectType: 'location',
+                                        address: '[wedding hall address]',
+                                        addressTitle: '[wedding hall name]',
+                                        content: {
+                                            title: 'Wedding of [name] and [name]',
+                                            description: 'Saturday, February 12, 2022 at 12PM',
+                                            imageUrl: 'https://wedding.dcof.io/images/photo/share_thumb_01.jpg',
+                                            link: {
+                                              mobileWebUrl: 'https://wedding.dcof.io',
+                                              webUrl: 'https://wedding.dcof.io',
+                                            },
+                                        },
+                                        buttons: [
+                                            {
+                                                title: 'Details',
+                                                link: {
+                                                    mobileWebUrl: 'https://wedding.dcof.io',
+                                                    webUrl: 'https://wedding.dcof.io',
+                                                },
+                                            },
+                                        ],
+                                    })
+                                }
+                            </script>
+                        </div>
+                        <div class="d-inline-block">
+                            <a id="naver-line-link-btn" href="javascript:sendNaverLineLink();">
+                                <img class="share-icon" src="https://www.line-website.com/social-plugins/img/common/square-default-large.png">
+                            </a>
+                            <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+                            <script>
+                                function sendNaverLineLink() {
+                                    const shareInfo = 'Wedding of [name] and [name]\nSaturday, February 12, 2022 at 12PM\nhttps://wedding.dcof.io';
+                                    const url = 'http://line.me/R/msg/text/?' + encodeURIComponent(shareInfo);
+                                    const aTag = window.open(url, 'Line', '');
+                                    if ( aTag ) aTag.focus();
+                                }
+                            </script>
+                        </div>
+                        <div class="d-inline-block">
+                            <a id="copy-link-btn" href="javascript:void(0);" onclick="copy('https://wedding.dcof.io', this);">
+                                <img class="share-icon" src="images/img/link.png">
+                            </a>
+                        </div>
+                        <div class="d-inline-block">
+                            <a id="share-schedule-btn" href="javascript:void(0);" onclick="shareSchedule();">
+                                <img class="share-icon" src="images/img/schedule.png">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -400,17 +508,27 @@
             <img src="images/img/up-arrow-128x128.png" style="width:32px;height:32px;">
         </a>
     </div>
+    <div class="position-fixed start-50" style="z-index:1100;bottom:15px;transform:translate(-50%,-50%);margin:0 auto;">
+        <div id="copiedToast" class="toast" style="width:initial" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="1000">
+            <div class="toast-body">
+                복사되었습니다.
+            </div>
+        </div>
+    </div>
+    <script src="js/special.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/photoswipe.min.js"></script>
     <script src="js/photoswipe-ui-default.min.js"></script>
     <script src="js/wedding.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics: change G-XXXXXXXXXX to be your site's ID. -->
-<!--    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ7ZL3VQ67"></script>-->
-<!--    <script>-->
-<!--        window.dataLayer = window.dataLayer || [];-->
-<!--        function gtag(){dataLayer.push(arguments);}-->
-<!--        gtag('js', new Date());-->
-<!--        gtag('config', 'G-RQ7ZL3VQ67');-->
-<!--    </script>-->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ7ZL3VQ67"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RQ7ZL3VQ67');
+    </script>
+    -->
 </body>
 </html>

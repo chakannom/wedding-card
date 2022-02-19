@@ -201,3 +201,38 @@ var initGallerySliderFromDOM = function(gallerySelector) {
 };
 // execute above function
 initGallerySliderFromDOM('.gallery');
+
+/* copy to clipboard */
+var copy = function(val, element) {
+    if (document.execCommand) {
+        var textareaTag = document.createElement("textarea");
+        textareaTag.value = val;
+        element.parentNode.appendChild(textareaTag);
+        textareaTag.select();
+        document.execCommand("copy");
+        element.parentNode.removeChild(textareaTag);
+        new bootstrap.Toast(document.getElementById('copiedToast')).show();
+    } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(val).then(() => {
+            new bootstrap.Toast(document.getElementById('copiedToast')).show();
+        }).catch(err => {
+            console.log('Something went wrong', err);
+        });
+    }
+}
+
+var shareSchedule = function() {
+    var aTag = document.createElement("a");
+
+    var mobileType = navigator.userAgent.toLowerCase();
+    if (mobileType.indexOf("iphone") > -1
+        || mobileType.indexOf("ipad") > -1
+        || mobileType.indexOf("ipod") > -1) {
+        aTag.href = 'webcal://wedding.docf.io/schedule.ics';
+    } else {
+        aTag.href = 'schedule.ics';
+    }
+    document.body.appendChild(aTag);
+    aTag.click();
+    document.body.removeChild(aTag);
+}
