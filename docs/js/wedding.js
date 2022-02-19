@@ -1,5 +1,6 @@
 /* D-Day counter */
 var formatTime = function(time) {
+    if (time < 0) time *= -1; // after D-day
     return time < 10 ? '0' + time : time;
 }
 
